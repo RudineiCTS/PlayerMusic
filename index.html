@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="containerMusic">
+    <div class="playerContent">
+
+        <div class="playerControls">
+        
+          <button class='controlsPlayer'> 
+            <img src="./assets/backwardIcon.svg" alt="">
+          </button>
+          <button class='controlsPlayer'> 
+            <img src="./assets/playIcon.svg" alt="">
+           </button>
+           <button class='controlsPlayer'> 
+            <img src="./assets/forwardIcon.svg" alt="">
+           </button>
+
+           <button id='repeatButton' > 
+            <img src="./assets/repeatIcon.svg" alt="">
+           </button>
+        </div>
+        <div class="playerContainer">
+          <input type="range"  min="0" max="0" step="1">
+          <div class="containerDuration">
+            <div class="current-duration">00:00</div>
+            <div class="total-duration">00:00</div>
+          </div>
+        </div>
+
+    </div>
+  </main>
+  
+</body>
+<script src="data.js"></script>
+<script src="./player.js"></script>
+<script src="./index.js"></script>
+</html>
