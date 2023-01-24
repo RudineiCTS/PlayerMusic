@@ -5,26 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#">
   <title>Document</title>
 </head>
 <body>
   <main class="containerMusic">
     <div class="playerContent">
+      <img src="./assets/image.gif" alt="" class="imgSong">
 
-        <div class="playerControls">
-        
+        <div class="playerControls"> 
           <button class='controlsPlayer'> 
             <img src="./assets/backwardIcon.svg" alt="">
           </button>
-          <button class='controlsPlayer'> 
-            <img src="./assets/playIcon.svg" alt="">
+          <button id='player' name="play"> 
+            <img src="./assets/playIcon.svg" alt="player" name="play-img">
            </button>
-           <button class='controlsPlayer'> 
+           <button class='controlsPlayer' name="next"> 
             <img src="./assets/forwardIcon.svg" alt="">
-           </button>
-
-           <button id='repeatButton' > 
-            <img src="./assets/repeatIcon.svg" alt="">
            </button>
         </div>
         <div class="playerContainer">
@@ -39,7 +36,8 @@
   </main>
   
 </body>
-<script src="data.js"></script>
-<script src="./player.js"></script>
-<script src="./index.js"></script>
+<script type="module" src="./playerElements.js" ></script>
+<script type="module" src="data.js" ></script>
+<script type="module" src="./player.js" ></script>
+<script type="module" src="./index.js" ></script>
 </html>
